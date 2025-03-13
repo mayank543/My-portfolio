@@ -4,7 +4,7 @@ import { IoLogoXing } from "react-icons/io";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white px-6 py-8 text-center">
+    <footer className="bg-black text-white px-6 py-4 pb-20 text-center">
       {/* Contact Section */}
       <h2 className="text-xl font-bold">Reach out to me.</h2>
       <p className="text-gray-400 mt-2">

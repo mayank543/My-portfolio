@@ -31,9 +31,9 @@ function FloatingBar() {
 
       {/* Profile Image (Click to switch personality) */}
       <img
-        src="/profile.jpg" // Change to your actual image path
+        src="src/assets/WalterWhite.jpeg" // Change to your actual image path
         alt="Profile"
-        className="w-8 h-8 rounded-full cursor-pointer border border-gray-500"
+        className="w-8 h-8 rounded-lg cursor-pointer border border-gray-500"
         onClick={() => navigate("/alternate")}
       />
     </div>

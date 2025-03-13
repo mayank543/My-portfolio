@@ -1,29 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css"; 
 import 'tailwindcss/tailwind.css';
 
+import Header from './components/Header'; 
 import SkillsSection from "./components/SkillsSection";
 import AboutMe from './components/AboutMe';
-import Header from './components/Header'; 
 import Projects from './components/Project';
 import Footer from "./components/Footer";
+import FloatingBar from "./components/FloatingBar";
+import AlternatePage from "./pages/AlternatePage"; // New page
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      <Header> </Header>
-      <SkillsSection />
-      <Projects/>
-      <Footer />
-      
-      
+    <Router>
+    <div className="bg-black min-h-screen text-white flex flex-col">
+      <Routes>
+        {/* 🏠 Main Page (Includes Header) */}
+        <Route path="/" element={
+          <>
+            <Header />
+            <SkillsSection />
+            <Projects />
+            <Footer />
+          </>
+        } />
+  
+        {/* 🎭 Alternate Page (No Header) */}
+        <Route path="/alternate" element={<AlternatePage />} />
+      </Routes>
+  
+      {/* Floating Bar Stays on All Pages */}
+      <FloatingBar />
     </div>
-  )
+  </Router>
+  );
 }
 
-export default App
+export default App;
