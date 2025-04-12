@@ -1,17 +1,21 @@
 import React, { useRef } from "react";
-import messi from "/src/assets/messi.jpeg";
-import guts from "/src/assets/guts.jpg";
-import luffy from "/src/assets/luffy.jpg";
+import Book2 from "/src/assets/Book2.jpeg";
+import Book3 from "/src/assets/Book3.jpg";
+import Book5 from "/src/assets/Book5.jpg";
+import Book6 from "/src/assets/Book6.jpg";
+import Book7 from "/src/assets/Book7.jpeg";
+import Book1 from "/src/assets/Book1.jpg";
+import Book4 from "/src/assets/Book4.jpg";
 
 const books = [
-  { title: "The Pragmatic Programmer", description: "A must-read for every software engineer, filled with timeless coding wisdom.", image: messi, link: "https://example.com/book1" },
-  { title: "Clean Code", description: "Teaches how to write maintainable, efficient, and clean software.", image: guts, link: "https://example.com/book2" },
-  { title: "Deep Work", description: "Explores how to focus deeply in a world of distractions.", image: luffy, link: "https://example.com/book3" },
-  { title: "The Mythical Man-Month", description: "Classic book on software project management.", image: messi, link: "https://example.com/book4" },
-  { title: "You Don't Know JS", description: "Deep dive into JavaScript internals.", image: guts, link: "https://example.com/book5" },
-  { title: "Design Patterns", description: "Fundamental software design principles and reusable patterns.", image: luffy, link: "https://example.com/book6" },
-  { title: "Refactoring", description: "How to improve existing code without changing behavior.", image: messi, link: "https://example.com/book7" },
-  { title: "The Phoenix Project", description: "A novel about DevOps and IT management.", image: guts, link: "https://example.com/book8" },
+  { title: "A Short History of Nearly Everything", description: "It is a quest to understand everything that has happened from the Big Bang to the rise of civilisation - how we got from there, being nothing at all, to here, being us", image: Book1, link: "https://example.com/book1" },
+  { title: "Midnight In Chernobyl", description: " explores unconventional fitness hacks, some unproven but effective. It’s for those who challenge mainstream health beliefs.", image: Book2, link: "https://example.com/book2" },
+  { title: "Hooked", description: "Explores how to focus deeply in a world of distractions.", image: Book6, link: "https://example.com/book3" },
+  { title: "Sapiens- A brief History Of Humankind", description: "Classic book on software project management.", image: Book4, link: "https://example.com/book4" },
+  { title: "The 4-Hour Body", description: "Explores unconventional fitness hacks, some unproven but effective. It’s for those who challenge mainstream health beliefs.", image: Book5, link: "https://example.com/book5" },
+  { title: "Magnificient Delusions", description: "Fundamental software design principles and reusable patterns.", image: Book3, link: "https://example.com/book6" },
+  { title: "Refactoring", description: "How to improve existing code without changing behavior.", image: Book7, link: "https://example.com/book7" },
+  { title: "The Phoenix Project", description: "A novel about DevOps and IT management.", image: Book7, link: "https://example.com/book8" },
 ];
 
 const BookCarousel = () => {
@@ -19,7 +23,7 @@ const BookCarousel = () => {
 
   const scroll = (direction) => {
     if (carouselRef.current) {
-      const scrollAmount = 300;
+      const scrollAmount = 500;
       carouselRef.current.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
     }
   };

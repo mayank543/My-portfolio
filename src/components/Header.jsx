@@ -1,5 +1,5 @@
 import React from "react";
-import joker from "../assets/joker.jpg";
+import Mayank2 from "../assets/Mayank2.jpg";
 import { FaGithub, FaXTwitter, FaLinkedin, FaCode } from "react-icons/fa6";
 import AboutMe from "./AboutMe"; // Import AboutMe here
 
@@ -9,7 +9,7 @@ function Header() {
       {/* Profile Section */}
       <div className="flex items-center p-6 rounded-lg w-full max-w-4xl">
         {/* Profile Image */}
-        <img src={joker} alt="Profile" className="w-24 h-24 rounded-lg object-cover" />
+        <img src={Mayank2} alt="Profile" className="w-24 h-24 rounded-lg object-cover" />
 
         {/* Name & Title */}
         <div className="ml-6">
