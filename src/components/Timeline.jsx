@@ -3,29 +3,36 @@ import React from "react";
 const Timeline = () => {
   const experiences = [
     {
-      title: "TECH TEAM MEMBER",
+      title: "GETTING REAL WITH CODE",
       date: "August 2023 - Present",
       description: [
-        "Working collaboratively within a team to develop and maintain the website of the organization.",
-        "Designed and implemented a customized Next.js project structure with an integrated Tailwind setup, reducing development time by 30% and improving code quality.",
-        "Engineered responsive templates and components, prioritizing SEO and accessibility, contributing to a significant increase in client's online revenue.",
+        "Got into frontend development with React and Tailwind; GitHub finally saw some life.",
+        "Dabbled in DSA and CP on LeetCode and Codeforces (until the rating anxiety hit).",
+        "Built and shipped real projects with teammates — including full frontend UIs that didn’t crash (mostly).",
+        "Started understanding component design, state management, and the joy of a green Netlify deploy."
       ],
       image: "your-image-url-1.jpg",
     },
     {
-      title: "CONTRIBUTOR",
+      title: "BREADBOARD DREAMS",
       date: "October 2023 - November 2023",
       description: [
-        "Engineered a robust component-based architecture using ReactJS for a web app tailored to the banking sector.",
+        "Spent time diving into different corners of tech — from basic PCB design to understanding how cybersecurity attacks work (out of curiosity, not application).",
+        "Attempted to reverse engineer a Bluetooth speaker to see how signals work. It didn’t work again, but I learned a lot about circuits, soldering (and burning).",
+        "Looked into bug bounty programs, just enough to understand how websites get compromised — and how to avoid building insecure ones.",
+        "Gradually found myself more drawn to the web — cleaner errors, better communities, and slightly less smoke."
       ],
       image: "your-image-url-2.jpg",
     },
     {
-      title: "FRONTEND DEVELOPER INTERN",
+      title: "FIGURING IT OUT!",
       date: "January 2024 - March 2024",
       description: [
-        "Developed high-performance user interfaces using React and Tailwind CSS.",
-        "Collaborated with designers and backend engineers to enhance user experience and functionality.",
+        "	Joined the photography club to chase passion (and free snacks).",
+        "Took exactly zero award-winning shots, but developed a keen eye for angles — especially in group photos.",
+        "Somehow ended up contributing as a photographer during Ephemere, the college fest. ",
+        "Racked up 100+ hours in SmashKarts, mastering game theory without realizing it.",
+        "	Discovered an interest in cinematography and visual storytelling — a spark that still lingers. Maybe one day, I’ll even shoot a short film."
       ],
       image: "your-image-url-3.jpg",
     },

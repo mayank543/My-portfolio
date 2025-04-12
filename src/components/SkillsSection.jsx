@@ -2,11 +2,11 @@ import React from "react";
 
 const skills = [
   "ReactJs", "NextJs", "JavaScript", "TypeScript", "Tailwind",
-  "Tanstack Query", "Zustand", "shadcn", "Motion", "GSAP",
-  "NodeJS", "ExpressJS", "PostgreSQL", "MongoDB", "Redis",
-  "Prisma", "Postman", "Git", "GitHub", "Python",
-  "Java", "C", "C++", "SQL", "Docker",
-  "Linux", "Vercel", "Figma",
+    "shadcn",  "GSAP",
+  "NodeJS", "ExpressJS", "PostgreSQL", "MongoDB", 
+  "Prisma", "Postman", "Git", "GitHub", 
+  "Java", "C", "C++", "SQL"
+  
 ];
 
 const SkillsSection = () => {
