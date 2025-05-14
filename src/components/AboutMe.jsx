@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function AboutMe() {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <section className="max-w-4xl mx-auto px-6 py-12 text-white">
       {/* About Me Title */}
@@ -18,9 +20,23 @@ function AboutMe() {
       </p>
 
       {/* Show More Button */}
-      <a href="#" className="text-blue-400 font-medium mt-4 inline-block hover:underline">
-        Show more about me →
+      <a
+        href="#"
+        className="text-blue-400 font-medium mt-4 inline-block hover:underline"
+        onClick={(e) => {
+          e.preventDefault();
+          setShowMore(!showMore);
+        }}
+      >
+        {showMore ? "Show less ↑" : "Show more about me →"}
       </a>
+
+      {/* Conditionally Rendered Extra Text */}
+      {showMore && (
+        <p className="text-gray-300 leading-relaxed mt-4">
+          Outside of code, I’m constantly exploring new ideas in design, gaming mechanics, and digital storytelling. Whether it’s analyzing cinematic shots or losing track of time on a puzzle, I love things that make you think differently. I also enjoy writing and reflecting on my tech journey—maybe one day I'll publish a blog or two!
+        </p>
+      )}
 
       {/* Hire Me Section */}
       <div className="mt-10">
@@ -29,9 +45,11 @@ function AboutMe() {
           I’m currently available for <span className="text-green-400">internships</span>, <span className="text-green-400">full-time opportunities</span>, and <span className="text-green-400">freelance projects</span>. If you’re looking for someone passionate, skilled, and ready to contribute, I’m here to help bring your ideas to life!
         </p>
         {/* Hire Me Button */}
-        <button className="mt-4 bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center hover:bg-gray-700">
-          <span className="mr-2">💼</span> Hire Me
-        </button>
+        <a
+          href="mailto:mayankdoholiya.official@gmail.com"
+          className="mt-4 inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">
+         <span className="mr-2">💼</span> Hire Me
+         </a>
       </div>
     </section>
   );

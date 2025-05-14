@@ -1,4 +1,7 @@
 import React from "react";
+import breadboard from "../assets/breadboard.jpg"
+import leetcode from "../assets/leetcode.jpeg"
+import piccell from "../assets/piccell.png"
 
 const Timeline = () => {
   const experiences = [
@@ -11,7 +14,7 @@ const Timeline = () => {
         "Built and shipped real projects with teammates — including full frontend UIs that didn’t crash (mostly).",
         "Started understanding component design, state management, and the joy of a green Netlify deploy."
       ],
-      image: "your-image-url-1.jpg",
+      image: leetcode,
     },
     {
       title: "BREADBOARD DREAMS",
@@ -22,19 +25,19 @@ const Timeline = () => {
         "Looked into bug bounty programs, just enough to understand how websites get compromised — and how to avoid building insecure ones.",
         "Gradually found myself more drawn to the web — cleaner errors, better communities, and slightly less smoke."
       ],
-      image: "your-image-url-2.jpg",
+      image: breadboard,
     },
     {
       title: "FIGURING IT OUT!",
       date: "January 2024 - March 2024",
       description: [
-        "	Joined the photography club to chase passion (and free snacks).",
+        "	Joined Piccell (college's photography club) to chase passion (and free snacks).",
         "Took exactly zero award-winning shots, but developed a keen eye for angles — especially in group photos.",
         "Somehow ended up contributing as a photographer during Ephemere, the college fest. ",
         "Racked up 100+ hours in SmashKarts, mastering game theory without realizing it.",
         "	Discovered an interest in cinematography and visual storytelling — a spark that still lingers. Maybe one day, I’ll even shoot a short film."
       ],
-      image: "your-image-url-3.jpg",
+      image: piccell,
     },
   ];
 

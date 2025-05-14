@@ -43,7 +43,7 @@ function Header2() {
               <FaLinkedin className="text-white w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://leetcode.com/u/may_nk_d_0504/"
               className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700"
             >
               <FaCode className="text-white w-5 h-5" />

@@ -1,6 +1,6 @@
 import React from "react";
 import Mayank2 from "../assets/Mayank2.jpg";
-import { FaGithub, FaXTwitter, FaLinkedin, FaCode } from "react-icons/fa6";
+import { FaGithub, FaXTwitter, FaLinkedin, FaCode } from "react-icons/fa6"; 
 import AboutMe from "./AboutMe"; // Import AboutMe here
 
 function Header() {
@@ -27,7 +27,7 @@ function Header() {
             <a href="https://www.linkedin.com/in/mayank-doholiya/" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700">
               <FaLinkedin className="text-white w-5 h-5" />
             </a>
-            <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700">
+            <a href="https://leetcode.com/u/may_nk_d_0504/" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700">
               <FaCode className="text-white w-5 h-5" />
             </a>
           </div>

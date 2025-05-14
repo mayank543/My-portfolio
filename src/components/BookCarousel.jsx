@@ -6,16 +6,18 @@ import Book6 from "/src/assets/Book6.jpg";
 import Book7 from "/src/assets/Book7.jpeg";
 import Book1 from "/src/assets/Book1.jpg";
 import Book4 from "/src/assets/Book4.jpg";
+import linux from "/src/assets/linux.jpg";
+
 
 const books = [
   { title: "A Short History of Nearly Everything", description: "It is a quest to understand everything that has happened from the Big Bang to the rise of civilisation - how we got from there, being nothing at all, to here, being us", image: Book1, link: "https://example.com/book1" },
   { title: "Midnight In Chernobyl", description: " explores unconventional fitness hacks, some unproven but effective. It’s for those who challenge mainstream health beliefs.", image: Book2, link: "https://example.com/book2" },
   { title: "Hooked", description: "Explores how to focus deeply in a world of distractions.", image: Book6, link: "https://example.com/book3" },
-  { title: "Sapiens- A brief History Of Humankind", description: "Classic book on software project management.", image: Book4, link: "https://example.com/book4" },
+  { title: "Sapiens- A brief History Of Humankind", description: "The book focuses on Homo sapiens, and surveys the history of humankind, starting from the Stone Age and going up to the 21st century.", image: Book4, link: "https://example.com/book4" },
   { title: "The 4-Hour Body", description: "Explores unconventional fitness hacks, some unproven but effective. It’s for those who challenge mainstream health beliefs.", image: Book5, link: "https://example.com/book5" },
-  { title: "Magnificient Delusions", description: "Fundamental software design principles and reusable patterns.", image: Book3, link: "https://example.com/book6" },
-  { title: "Refactoring", description: "How to improve existing code without changing behavior.", image: Book7, link: "https://example.com/book7" },
-  { title: "The Phoenix Project", description: "A novel about DevOps and IT management.", image: Book7, link: "https://example.com/book8" },
+  { title: "Magnificient Delusions", description: " A character-led history of the bizarrely ill-suited alliancebetween America and Pakistan", image: Book3, link: "https://example.com/book6" },
+  { title: "Just for Fun: The Story of an Accidental Revolutionary", description: "The life and ideals of Linus Torvalds, creator of Linux.The life and ideals of Linus Torvalds, creator of Linux.", image: linux, link: "https://example.com/book7" },
+  { title: "Managas", description: "Stories of war, vengeance, and the human spirit.Gritty, emotional, and beautifully drawn epics", image: Book7, link: "https://example.com/book8" },
 ];
 
 const BookCarousel = () => {
