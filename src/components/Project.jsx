@@ -14,11 +14,11 @@ function Projects() {
           <img src={projectImage} alt="The Daily Crimes" className="w-32 h-24 rounded-lg object-cover" />
           <div className="flex-1">
             <h3 className="text-xl font-bold flex items-center">
-              Bidding Wars
-              <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-red-900 text-red-300">● Building</span>
+              CineMatch
+              <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-green-900 text-green-300">● Running </span>
             </h3>
             <p className="text-gray-400 text-sm mt-2">
-            Built the interactive frontend of a real-time bidding game where users compete on quirky virtual items. Features include profit tracking, a dynamic leaderboard, and a gamified UI inspired by Among Us for an engaging experience.
+            CineMatch is a simple yet effective tool that helps you to find instantly find movies that matches one's interest.Just enter two or more of your  favorite movies and CineMatch uses TMDB’s vast movie database to find perfect matches. Saves time and personally i find it better than other ai jargon tools for recommendations.
             </p>
           </div>
           <div className="flex space-x-3 text-gray-400">
@@ -37,7 +37,7 @@ function Projects() {
               <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-red-900 text-red-300">● Building</span>
             </h3>
             <p className="text-gray-400 text-sm mt-2">
-            Built LexiScan — an AI-powered legal analyzer using NLP, named entity recognition, and RAG to extract clauses, summarize documents, and surface insights.
+            Building LexiScan — an AI-powered legal analyzer using NLP, named entity recognition, and RAG to extract clauses, summarize documents, and surface insights.
             </p>
           </div>
           <div className="flex space-x-3 text-gray-400">
@@ -52,11 +52,11 @@ function Projects() {
           <img src={projectImage} alt="AI Blog Generator" className="w-32 h-24 rounded-lg object-cover" />
           <div className="flex-1">
             <h3 className="text-xl font-bold flex items-center">
-              AI Blog Generator
+              Bidding Wars
               <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-red-900 text-red-300">● Building</span>
             </h3>
             <p className="text-gray-400 text-sm mt-2">
-              Created an AI-powered tool that generates SEO-friendly blog posts using OpenAI APIs. Includes editor, preview, and export options.
+              Building an interactive frontend of a real-time bidding game where users compete on quirky virtual items. Features include profit tracking, a dynamic leaderboard, and a gamified UI inspired by Among Us for an engaging experience.
             </p>
           </div>
           <div className="flex space-x-3 text-gray-400">

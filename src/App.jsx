@@ -8,12 +8,14 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Project';
 import Footer from "./components/Footer";
 import FloatingBar from "./components/FloatingBar";
-import AlternatePage from "./pages/AlternatePage"; // New page
+import AlternatePage from "./pages/AlternatePage";
+import LiveClock from "./components/LiveClock";
 
 function App() {
   return (
     <Router>
     <div className="bg-black min-h-screen text-white flex flex-col">
+      <LiveClock/>
       <Routes>
         {/* 🏠 Main Page (Includes Header) */}
         <Route path="/" element={
