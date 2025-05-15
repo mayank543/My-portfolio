@@ -2,7 +2,7 @@ import React from "react";
 
 const skills = [
   "ReactJs", "NextJs", "JavaScript", "TypeScript", "Tailwind",
-    "shadcn",  "GSAP",
+    "shadcn",  "GSAP", "Framer-motion",
   "NodeJS", "ExpressJS", "PostgreSQL", "MongoDB", 
   "Prisma", "Postman", "Git", "GitHub", 
   "Java", "C", "C++", "SQL"

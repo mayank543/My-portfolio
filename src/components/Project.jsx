@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import projectImage from "../assets/project.jpg";
 import { FaEye, FaLink, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function Projects() {
   const [showAll, setShowAll] = useState(false);
@@ -17,17 +18,37 @@ function Projects() {
           <img src={projectImage} alt="The Daily Crimes" className="w-32 h-24 rounded-lg object-cover" />
           <div className="flex-1">
             <h3 className="text-xl font-bold flex items-center">
-              CineMatch
-              <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-green-900 text-green-300">● Running </span>
-            </h3>
+  CineMatch
+  <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-green-900 text-green-300 flex items-center gap-1">
+    <motion.span
+      animate={{
+        color: ["#14532d", "#22c55e", "#14532d"], // darker green to bright to darker
+    textShadow: [
+      "0 0 1px #14532d",
+      "0 0 4px #22c55e",
+      "0 0 1px #14532d"
+    ],
+      }}
+      transition={{
+        duration: 1.5,
+        repeat: Infinity,
+        repeatType: "loop",
+      }}
+      className="text-xs" // 👈 makes the dot smaller
+    >
+      ●
+    </motion.span>
+    <span className="font-normal text-sm">Running</span>
+  </span>
+</h3>
             <p className="text-gray-400 text-sm mt-2">
-              CineMatch is a simple yet effective tool that helps you to find instantly find movies that matches one's interest. Just enter two or more of your favorite movies and CineMatch uses TMDB’s vast movie database to find perfect matches.
+              CineMatch is a simple yet effective tool that helps you to instantly find movies that matches one's interest. Just enter two or more of your favorite movies and CineMatch uses TMDB’s vast movie database to find perfect matches.
             </p>
           </div>
           <div className="flex space-x-3 text-gray-400">
-            <FaEye className="hover:text-white cursor-pointer" />
-            <FaLink className="hover:text-white cursor-pointer" />
-            <FaGithub className="hover:text-white cursor-pointer" />
+            
+            <a href="https://cine-match-fjmq.vercel.app/" target="_blank" rel="noopener noreferrer"><FaLink className="hover:text-white cursor-pointer" /></a>
+            <a href="https://github.com/mayank543/CineMatch" target="_blank" rel="noopener noreferrer"><FaGithub className="hover:text-white cursor-pointer" /></a>
           </div>
         </div>
 
@@ -36,17 +57,36 @@ function Projects() {
           <img src={projectImage} alt="LexiScan" className="w-32 h-24 rounded-lg object-cover" />
           <div className="flex-1">
             <h3 className="text-xl font-bold flex items-center">
-              LexiScan
-              <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-red-900 text-red-300">● Building</span>
-            </h3>
+  LexiScan
+  <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-red-900 text-red-300 flex items-center gap-1">
+    <motion.span
+      animate={{
+        color: ["#7f1d1d", "#f87171", "#7f1d1d"], // darker red to bright to darker
+    textShadow: [
+      "0 0 1px #7f1d1d",
+      "0 0 4px #f87171",
+      "0 0 1px #7f1d1d"
+    ],
+      }}
+      transition={{
+        duration: 1.5,
+        repeat: Infinity,
+        repeatType: "loop",
+      }}
+      className="text-xs" //  makes the dot smaller
+    >
+      ●
+    </motion.span>
+    <span className="font-normal text-sm">Building</span>
+  </span>
+</h3>
             <p className="text-gray-400 text-sm mt-2">
               Building LexiScan — an AI-powered legal analyzer using NLP, named entity recognition, and RAG to extract clauses, summarize documents, and surface insights.
             </p>
           </div>
           <div className="flex space-x-3 text-gray-400">
-            <FaEye className="hover:text-white cursor-pointer" />
-            <FaLink className="hover:text-white cursor-pointer" />
-            <FaGithub className="hover:text-white cursor-pointer" />
+            
+            <a href="https://github.com/mayank543/LexiScan" target="_blank" rel="noopener noreferrer"><FaGithub className="hover:text-white cursor-pointer" /></a>
           </div>
         </div>
 
@@ -70,17 +110,36 @@ function Projects() {
               <img src={projectImage} alt="Bidding Wars" className="w-32 h-24 rounded-lg object-cover" />
               <div className="flex-1">
                 <h3 className="text-xl font-bold flex items-center">
-                  Bidding Wars
-                  <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-red-900 text-red-300">● Building</span>
-                </h3>
+  Bidding Wars
+  <span className="ml-3 px-3 py-1 text-sm rounded-lg bg-red-900 text-red-300 flex items-center gap-1">
+    <motion.span
+      animate={{
+        color: ["#7f1d1d", "#f87171", "#7f1d1d"], // darker red to bright to darker
+    textShadow: [
+      "0 0 1px #7f1d1d",
+      "0 0 4px #f87171",
+      "0 0 1px #7f1d1d"
+    ],
+      }}
+      transition={{
+        duration: 1.5,
+        repeat: Infinity,
+        repeatType: "loop",
+      }}
+      className="text-xs" //  makes the dot smaller
+    >
+      ●
+    </motion.span>
+    <span className="font-normal text-sm">Building</span>
+  </span>
+</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Building an interactive frontend of a real-time bidding game where users compete on quirky virtual items. Features include profit tracking, a dynamic leaderboard, and a gamified UI inspired by Among Us.
+                  Building an interactive frontend of a real-time bidding game where users compete on quirky virtual items. Features include profit tracking, a dynamic leaderboard, and a gamified UI inspired by Among Us. (Group project)
                 </p>
               </div>
               <div className="flex space-x-3 text-gray-400">
-                <FaEye className="hover:text-white cursor-pointer" />
-                <FaLink className="hover:text-white cursor-pointer" />
-                <FaGithub className="hover:text-white cursor-pointer" />
+                
+              <a href="https://github.com/Parthyadav05/bidding-War" target="_blank" rel="noopener noreferrer"><FaGithub className="hover:text-white cursor-pointer" /></a>
               </div>
             </div>
 
