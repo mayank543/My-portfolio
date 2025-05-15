@@ -3,7 +3,7 @@ import Book2 from "/src/assets/Book2.jpeg";
 import Book3 from "/src/assets/Book3.jpg";
 import Book5 from "/src/assets/Book5.jpg";
 import Book6 from "/src/assets/Book6.jpg";
-import Book7 from "/src/assets/Book7.jpeg";
+import Book7 from "/src/assets/book7.jpeg";
 import Book1 from "/src/assets/Book1.jpg";
 import Book4 from "/src/assets/Book4.jpg";
 import linux from "/src/assets/linux.jpg";
