@@ -1,4 +1,5 @@
 import React from "react";
+import WalterWhite from "../assets/WalterWhite.jpeg";
 import {
   FaGithub,
   FaXTwitter,
@@ -62,11 +63,11 @@ function FloatingBar() {
 
       {/* Profile Image (Toggle between home and alternate) */}
       <img
-        src="src/assets/WalterWhite.jpeg" // Replace with actual path if different
-        alt="Profile"
-        className="w-8 h-8 rounded-lg cursor-pointer border border-gray-500"
-        onClick={togglePage}
-      />
+  src={WalterWhite}
+  alt="Profile"
+  className="w-8 h-8 rounded-lg cursor-pointer border border-gray-500"
+  onClick={togglePage}
+/>
     </div>
   );
 }
