@@ -4,7 +4,7 @@ function AboutMe() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <section className="max-w-4xl mx-auto px-6 py-12 text-white">
+    <section className="max-w-4xl mx-auto px-6 pt-12 text-white">
       {/* About Me Title */}
       <h2 className="text-2xl font-bold mb-4">About Me.</h2>
 
@@ -47,7 +47,7 @@ function AboutMe() {
         {/* Hire Me Button */}
         <a
           href="mailto:mayankdoholiya.official@gmail.com"
-          className="mt-4 inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">
+          className="mt-4 mb-20 inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">
          <span className="mr-2">💼</span> Hire Me
          </a>
       </div>

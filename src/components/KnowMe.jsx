@@ -2,7 +2,7 @@ import React from 'react';
 
 function KnowMe() {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-12 text-white">
+    <section className="max-w-4xl mx-auto px-6 py-12 text-white ">
       {/* About Me Title */}
       <h2 className="text-2xl font-bold mb-4">Know Me.</h2>
 

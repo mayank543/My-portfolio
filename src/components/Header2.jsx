@@ -17,7 +17,7 @@ function Header2() {
         {/* Name & Title */}
         <div className="ml-6">
           <h1 className="text-3xl font-bold">Mayank Doholiya</h1>
-          <p className="text-gray-400 text-base mt-1">Software Engineer</p>
+          <p className="text-gray-400 text-base mt-1">Why so serious? Let the code break.</p>
 
           {/* Social Icons */}
           <div className="flex space-x-4 mt-3">

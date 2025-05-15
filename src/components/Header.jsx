@@ -5,16 +5,16 @@ import AboutMe from "./AboutMe"; // Import AboutMe here
 
 function Header() {
   return (
-    <div className="h-screen bg-black text-white flex flex-col items-center justify-center">
+    <div className=" bg-black text-white flex flex-col items-center justify-center">
       {/* Profile Section */}
-      <div className="flex items-center p-6 rounded-lg w-full max-w-4xl">
+      <div className="flex items-center px-6 py-4 rounded-lg w-full max-w-4xl">
         {/* Profile Image */}
         <img src={Mayank2} alt="Profile" className="w-24 h-24 rounded-lg object-cover" />
 
         {/* Name & Title */}
         <div className="ml-6">
           <h1 className="text-3xl font-bold">Mayank Doholiya</h1>
-          <p className="text-gray-400">Software Engineer</p>
+          <p className="text-gray-400">Software Developer</p>
 
           {/* Social Icons */}
           <div className="flex space-x-3 mt-3">

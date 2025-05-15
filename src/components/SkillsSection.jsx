@@ -11,12 +11,12 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section className="bg-black text-white py-2 px-6  flex justify-center">
-      <div className="max-w-3xl w-full mx-auto">
+    <section className="bg-black text-white py-1 px-6 flex justify-center">
+      <div className="max-w-4xl w-full mx-auto">
         <h2 className="text-2xl font-bold mb-4 text-white text-left">
           Skills & Tools.
         </h2>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-3">
           {skills.map((skill, index) => (
             <span
               key={index}
