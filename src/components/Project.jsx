@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import projectImage from "../assets/project.jpg";
+import projectImage from "../assets/Project.jpg";
 import { FaEye, FaLink, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
