@@ -1,9 +1,16 @@
-import React from "react";
-import breadboard from "../assets/breadboard.jpg"
-import leetcode from "../assets/leetcode.jpeg"
-import piccell from "../assets/piccell.png"
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import breadboard from "../assets/breadboard.jpg";
+import leetcode from "../assets/leetcode.jpeg";
+import piccell from "../assets/piccell.png";
 
 const Timeline = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   const experiences = [
     {
       title: "GETTING REAL WITH CODE",
@@ -31,11 +38,11 @@ const Timeline = () => {
       title: "FIGURING IT OUT!",
       date: "January 2024 - March 2024",
       description: [
-        "	Joined Piccell (college's photography club) to chase passion (and free snacks).",
+        "Joined Piccell (college's photography club) to chase passion (and free snacks).",
         "Took exactly zero award-winning shots, but developed a keen eye for angles — especially in group photos.",
-        "Somehow ended up contributing as a photographer during Ephemere, the college fest. ",
+        "Somehow ended up contributing as a photographer during Ephemere, the college fest.",
         "Racked up 100+ hours in SmashKarts, mastering game theory without realizing it.",
-        "	Discovered an interest in cinematography and visual storytelling — a spark that still lingers. Maybe one day, I’ll even shoot a short film."
+        "Discovered an interest in cinematography and visual storytelling — a spark that still lingers. Maybe one day, I’ll even shoot a short film."
       ],
       image: piccell,
     },
@@ -44,26 +51,30 @@ const Timeline = () => {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <h2 className="text-3xl font-bold text-center mb-8 text-white">
-        My <span className="text-purple-400">College Experience</span>
+        My <span className="text-purple-500">College Experience</span>
       </h2>
       <div className="relative border-l-4 border-gray-700">
         {experiences.map((exp, index) => (
-          <div key={index} className="mb-8 ml-6 flex items-start">
+          <div
+            key={index}
+            className="mb-8 ml-6 flex items-start relative"
+            data-aos="fade-up"
+          >
             {/* Timeline Dot */}
-            <div className="absolute -left-3 w-6 h-6 bg-purple-500 rounded-full border-2 border-gray-900"></div>
+            <div className="absolute -left-6 top-2 w-6 h-6 bg-gray-500 rounded-full border-2 border-gray-900 z-10"></div>
 
-            {/* Timeline Box */}
-            <div className="bg-gray-900 text-white p-6 rounded-lg w-full shadow-lg flex">
-              {/* Image Section */}
+            {/* Timeline Box with animated background */}
+            <div className="bg-gradient-to-r from-[#0f0f0f] via-[#2d2d2d] to-[#0f0f0f] bg-[length:200%_200%] animate-background-slide text-white p-6 rounded-lg w-full shadow-lg flex">
+              {/* Image */}
               <img
                 src={exp.image}
                 alt={exp.title}
                 className="w-24 h-24 object-cover rounded-lg mr-6"
               />
 
-              {/* Text Section */}
+              {/* Content */}
               <div>
-                <p className="text-green-400 font-semibold">{exp.date}</p>
+                <p className="text-gray-400 font-semibold">{exp.date}</p>
                 <h3 className="text-xl font-bold mb-2">{exp.title}</h3>
                 <ul className="list-disc pl-4 text-gray-300 space-y-2">
                   {exp.description.map((point, i) => (
