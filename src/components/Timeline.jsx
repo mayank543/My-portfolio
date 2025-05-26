@@ -61,7 +61,7 @@ const Timeline = () => {
             data-aos="fade-up"
           >
             {/* Timeline Dot */}
-            <div className="absolute -left-6 top-2 w-6 h-6 bg-gray-500 rounded-full border-2 border-gray-900 z-10"></div>
+            <div className="absolute -left-10 top-2 w-6 h-6 bg-gray-500 rounded-full border-2 border-gray-900 z-10"></div>
 
             {/* Timeline Box with animated background */}
             <div className="bg-gradient-to-r from-[#0f0f0f] via-[#2d2d2d] to-[#0f0f0f] bg-[length:200%_200%] animate-background-slide text-white p-6 rounded-lg w-full shadow-lg flex">
