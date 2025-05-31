@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import projectImage from "../assets/Project.jpg";
+import bidImage from "../assets/bid.png";
+import cinematchImage from "../assets/cinematch.png";
+import lexiscanImage from "../assets/lexiscan.png";
 import { FaEye, FaLink, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -15,7 +17,7 @@ function Projects() {
 
         {/* Project 1 */}
         <div className="bg-[#181818] p-6 rounded-xl flex items-center gap-5 shadow-lg mb-6">
-          <img src={projectImage} alt="The Daily Crimes" className="w-32 h-24 rounded-lg object-cover" />
+          <img src={cinematchImage} alt="The Daily Crimes" className="w-32 h-24 rounded-lg object-cover" />
           <div className="flex-1">
             <h3 className="text-xl font-bold flex items-center">
   CineMatch
@@ -54,7 +56,7 @@ function Projects() {
 
         {/* Project 2 */}
         <div className="bg-[#181818] p-6 rounded-xl flex items-center gap-5 shadow-lg mb-6">
-          <img src={projectImage} alt="LexiScan" className="w-32 h-24 rounded-lg object-cover" />
+          <img src={lexiscanImage} alt="LexiScan" className="w-32 h-24 rounded-lg object-cover" />
           <div className="flex-1">
             <h3 className="text-xl font-bold flex items-center">
   LexiScan
@@ -107,7 +109,7 @@ function Projects() {
           <>
             {/* Project 3 */}
             <div className="bg-[#181818] p-6 rounded-xl flex items-center gap-5 shadow-lg mb-6">
-              <img src={projectImage} alt="Bidding Wars" className="w-32 h-24 rounded-lg object-cover" />
+              <img src={bidImage} alt="Bidding Wars" className="w-32 h-24 rounded-lg object-cover" />
               <div className="flex-1">
                 <h3 className="text-xl font-bold flex items-center">
   Bidding Wars
