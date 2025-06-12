@@ -46,7 +46,7 @@ function Projects() {
   </span>
 </h3>
             <p className="text-gray-400 text-sm mt-2">
-              CineMatch is a simple yet effective tool that helps you to instantly find movies that matches one's interest. Just enter two or more of your favorite movies and CineMatch uses TMDB’s vast movie database to find perfect matches.
+              HangoutHub is a real-time productivity hub with live chat, focus timer, and a GitHub-style contribution calendar. Built using React, Zustand, Socket.IO, and Tailwind CSS, it enables seamless collaboration with WebSocket-based presence detection and category-based filtering.
             </p>
           </div>
           <div className="flex space-x-3 text-gray-400">
