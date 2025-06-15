@@ -1,65 +1,120 @@
 import React from "react";
 import Mayank2 from "../assets/Mayank2.jpg";
 import { FaGithub, FaXTwitter, FaLinkedin, FaCode } from "react-icons/fa6"; 
-import AboutMe from "./AboutMe"; // Import AboutMe here
+import AboutMe from "./AboutMe";
 import { motion } from "framer-motion";
 
 function Header() {
   return (
-    <div className=" bg-black text-white flex flex-col items-center justify-center">
+    <div className="bg-black text-white flex flex-col items-center justify-center">
       {/* Profile Section */}
-      <div className="flex items-center px-6 py-4 rounded-lg w-full max-w-4xl">
-        {/* Profile Image */}
-        <img src={Mayank2} alt="Profile" className="w-24 h-24 rounded-lg object-cover" />
-
-       {/* Name & Title */}
-<div className="ml-6">
-  <h1 className="text-3xl font-bold flex items-center gap-4">
-    Mayank Doholiya
-
-    {/* Glowing 'Available' tag */}
-    <span className="px-2 py-0 text-sm rounded-lg border border-green-500 text-green-300 bg-transparent flex items-center gap-1">
-      <motion.span
-        animate={{
-          color: ["#14532d", "#22c55e", "#14532d"],
-          textShadow: [
-            "0 0 1px #14532d",
-            "0 0 4px #22c55e",
-            "0 0 1px #14532d"
-          ],
-        }}
-        transition={{
-          duration: 1.5,
-          repeat: Infinity,
-          repeatType: "loop",
-        }}
-        className="text-xs"
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="flex flex-col sm:flex-row items-center px-4 sm:px-6 py-6 sm:py-8 rounded-lg w-full max-w-4xl gap-4 sm:gap-0"
       >
-        ●
-      </motion.span>
-      <span className="font-normal text-sm">Available</span>
-    </span>
-  </h1>
+        {/* Profile Image */}
+        <motion.img 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+          src={Mayank2} 
+          alt="Profile" 
+          className="w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-cover shadow-lg ring-2 ring-gray-800/50" 
+        />
 
-  <p className="text-gray-400">Software Developer</p>
+        {/* Name & Title */}
+        <div className="sm:ml-6 text-center sm:text-left">
+          <motion.h1 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-2xl sm:text-3xl font-bold flex flex-col sm:flex-row items-center gap-2 sm:gap-4"
+          >
+            <span className="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
+              Mayank Doholiya
+            </span>
 
-          {/* Social Icons */}
-          <div className="flex space-x-3 mt-3">
-            <a href="https://github.com/mayank543" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700">
-              <FaGithub className="text-white w-5 h-5" />
-            </a>
-            <a href="https://x.com/d_mayank05" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700">
-              <FaXTwitter className="text-white w-5 h-5" />
-            </a>
-            <a href="https://www.linkedin.com/in/mayank-doholiya/" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700">
-              <FaLinkedin className="text-white w-5 h-5" />
-            </a>
-            <a href="https://leetcode.com/u/may_nk_d_0504/" className="bg-gray-800 p-2 rounded-lg hover:bg-gray-700">
-              <FaCode className="text-white w-5 h-5" />
-            </a>
-          </div>
+            {/* Enhanced Available tag */}
+            <motion.span 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="px-3 py-1 text-sm rounded-full border border-green-500/30 text-green-300 bg-green-950/20 flex items-center gap-2 backdrop-blur-sm"
+            >
+              <motion.span
+                animate={{
+                  color: ["#14532d", "#22c55e", "#14532d"],
+                  textShadow: [
+                    "0 0 1px #14532d",
+                    "0 0 4px #22c55e",
+                    "0 0 1px #14532d"
+                  ],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className="text-xs"
+              >
+                ●
+              </motion.span>
+              <span className="font-normal text-sm">Available</span>
+            </motion.span>
+          </motion.h1>
+
+          <motion.p 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-gray-400 text-lg mt-1"
+          >
+            Software Developer
+          </motion.p>
+
+          {/* Enhanced Social Icons */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="flex justify-center sm:justify-start space-x-3 mt-4"
+          >
+            {[
+              { icon: FaGithub, href: "https://github.com/mayank543", label: "GitHub" },
+              { icon: FaXTwitter, href: "https://x.com/d_mayank05", label: "Twitter" },
+              { icon: FaLinkedin, href: "https://www.linkedin.com/in/mayank-doholiya/", label: "LinkedIn" },
+              { icon: FaCode, href: "https://leetcode.com/u/may_nk_d_0504/", label: "LeetCode" }
+            ].map((social, index) => (
+              <motion.a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
+                whileHover={{ 
+                  scale: 1.1, 
+                  y: -2,
+                  transition: { duration: 0.2 }
+                }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative bg-gray-800 p-2 rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <social.icon className="text-white w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
+                
+                {/* Tooltip */}
+                <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 px-2 py-1 text-xs bg-gray-900 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                  {social.label}
+                </span>
+              </motion.a>
+            ))}
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
 
       {/* About Me Section */}
       <div className="w-full bg-black">
