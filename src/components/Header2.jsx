@@ -11,7 +11,7 @@ function Header2() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="flex items-center rounded-lg w-full max-w-4xl pl-6"
+        className="flex flex-col sm:flex-row items-center rounded-lg w-full max-w-4xl px-4 sm:px-6 gap-4 sm:gap-0"
       >
         {/* Profile Image with animation */}
         <motion.img
@@ -21,16 +21,16 @@ function Header2() {
           whileHover={{ scale: 1.05 }}
           src={joker}
           alt="Profile"
-          className="w-24 h-24 rounded-lg object-cover shadow-lg ring-2 ring-gray-800/50"
+          className="w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-cover shadow-lg ring-2 ring-gray-800/50"
         />
 
         {/* Name & Title */}
-        <div className="ml-6">
+        <div className="sm:ml-6 text-center sm:text-left">
           <motion.h1 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-3xl font-bold flex items-center gap-4"
+            className="text-2xl sm:text-3xl font-bold flex flex-col sm:flex-row items-center gap-2 sm:gap-4"
           >
             <span className="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
               Mayank Doholiya
@@ -69,7 +69,7 @@ function Header2() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-gray-400 mt-1"
+            className="text-gray-400 text-lg mt-1"
           >
             Why so serious? Let the code break.
           </motion.p>
@@ -79,7 +79,7 @@ function Header2() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex space-x-3 mt-4"
+            className="flex justify-center sm:justify-start space-x-3 mt-4"
           >
             {[
               { icon: FaGithub, href: "https://github.com/mayank543", label: "GitHub" },
