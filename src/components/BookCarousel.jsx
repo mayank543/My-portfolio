@@ -2,14 +2,14 @@ import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Your original imports - replace these with your actual imports
-const Book1 = "/src/assets/Book1.jpg";
-const Book2 = "/src/assets/Book2.jpeg";
-const Book3 = "/src/assets/Book3.jpg";
-const Book4 = "/src/assets/Book4.jpg";
-const Book5 = "/src/assets/Book5.jpg";
-const Book6 = "/src/assets/Book6.jpg";
-const Book7 = "/src/assets/book7.jpeg";
-const linux = "/src/assets/linux.jpg";
+import Book1 from "../assets/Book1.jpg";
+import Book2 from "../assets/Book2.jpeg";
+import Book3 from "../assets/Book3.jpg";
+import Book4 from "../assets/Book4.jpg";
+import Book5 from "../assets/Book5.jpg";
+import Book6 from "../assets/Book6.jpg";
+import Book7 from "../assets/book7.jpeg";
+import linux from "../assets/linux.jpg";
 
 const books = [
   { title: "A Short History of Nearly Everything", description: "It is a quest to understand everything that has happened from the Big Bang to the rise of civilisation - how we got from there, being nothing at all, to here, being us", image: Book1, link: "https://example.com/book1" },
